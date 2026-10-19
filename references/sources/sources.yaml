@@ -1,0 +1,1131 @@
+schema_version: 1
+scope: curated-reference-metadata
+sources:
+- id: meteor-client
+  name: Meteor Client
+  category: client
+  tags:
+  - client
+  - module-systems
+  - client-development
+  url: https://github.com/MeteorDevelopment/meteor-client
+  canonical_url: https://github.com/MeteorDevelopment/meteor-client
+  language: Java
+  license:
+    reported: GPL-3.0
+    api_reported: GPL-3.0
+    evidence_url: https://api.github.com/repos/MeteorDevelopment/meteor-client
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - module architecture
+  - settings
+  - commands
+  - rendering
+  - client utilities
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/MeteorDevelopment/meteor-client
+    revision: null
+  archived: false
+  default_branch: master
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Copyleft reference; do not silently copy into unrelated closed-source
+      projects. Concrete intended use requires rights review.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: module architecture; settings; commands; rendering; client
+      utilities
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: wurst-7
+  name: Wurst 7
+  category: client
+  tags:
+  - client
+  - module-systems
+  - client-development
+  url: https://github.com/Wurst-Imperium/Wurst7
+  canonical_url: https://github.com/Wurst-Imperium/Wurst7
+  language: Java
+  license:
+    reported: GPL-3.0
+    api_reported: GPL-3.0
+    evidence_url: https://api.github.com/repos/Wurst-Imperium/Wurst7
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - Fabric client patterns
+  - module architecture
+  - commands
+  - client features
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/Wurst-Imperium/Wurst7
+    revision: null
+  archived: false
+  default_branch: master
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Copyleft reference; do not silently copy into unrelated closed-source
+      projects. Concrete intended use requires rights review.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: Fabric client patterns; module architecture; commands; client
+      features
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: grim-anticheat
+  name: Grim AntiCheat
+  category: anticheat
+  tags:
+  - anticheat
+  - grim
+  - false-positives
+  - diagnostics
+  url: https://github.com/GrimAnticheat/Grim
+  canonical_url: https://github.com/GrimAnticheat/Grim
+  language: Java
+  license:
+    reported: GPL-3.0
+    api_reported: GPL-3.0
+    evidence_url: https://github.com/GrimAnticheat/Grim/blob/f5bbe9cf55a631f40b3d28d722d0f82b514e3403/LICENSE
+    review: Pinned LICENSE is GPL v3; source structure described only, no implementation
+      copied. Concrete reuse compatibility remains unapproved.
+  priority: specialized
+  status: registered
+  use_for:
+  - Grim anti-cheat validation explanations
+  - anti-cheat false-positive investigation
+  - anti-cheat version compatibility diagnostics
+  review:
+    status: source-inspected
+    checked_at: '2026-10-12'
+    evidence_url: https://github.com/GrimAnticheat/Grim/tree/f5bbe9cf55a631f40b3d28d722d0f82b514e3403
+    revision: f5bbe9cf55a631f40b3d28d722d0f82b514e3403
+  archived: false
+  default_branch: '2.0'
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Copyleft reference; do not silently copy into unrelated closed-source
+      projects. Concrete intended use requires rights review.
+  notes: Narrow diagnostic reference; use only for explicit anti-cheat questions or
+    directly implicated false positives. No automatic use for generic client, movement
+    or server work. See the understand-anticheat skill source map.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: Scoped flag/alert/consequence separation and transaction-ordered
+      state investigation.
+    source_completeness: Selected dispatch, prediction entrypoint, latency, flag and
+      punishment paths inspected; not an exhaustive audit.
+    unique_subsystems:
+    - CheckManager typed event dispatch
+    - LatencyUtils transaction queue
+    - Check and PunishmentManager consequence paths
+    licensing_confidence: license-file-reviewed-use-unapproved
+    compatibility_limits:
+    - Pinned 2.0 source study is not evidence for every deployed Grim build or protocol
+      version.
+    - No live false-positive reproduction or check accuracy claim; match installed
+      code and configuration.
+- id: fabric-api
+  name: Fabric API
+  category: fabric
+  tags:
+  - fabric
+  url: https://github.com/FabricMC/fabric
+  canonical_url: https://github.com/FabricMC/fabric-api
+  language: Java
+  license:
+    reported: Apache-2.0
+    api_reported: Apache-2.0
+    evidence_url: https://api.github.com/repos/FabricMC/fabric
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - Fabric APIs
+  - events
+  - networking
+  - registries
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/FabricMC/fabric
+    revision: null
+  archived: false
+  default_branch: '26.3'
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified. Supplied URL redirects to FabricMC/fabric-api; both URLs retained.
+  trust: primary
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: Fabric APIs; events; networking; registries
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: fabric-example-mod
+  name: Fabric Example Mod
+  category: fabric
+  tags:
+  - fabric
+  url: https://github.com/FabricMC/fabric-example-mod
+  canonical_url: https://github.com/FabricMC/fabric-example-mod
+  language: Java
+  license:
+    reported: CC0-1.0
+    api_reported: CC0-1.0
+    evidence_url: https://api.github.com/repos/FabricMC/fabric-example-mod
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - project creation
+  - Fabric Gradle layout
+  - minimal Fabric examples
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/FabricMC/fabric-example-mod
+    revision: null
+  archived: false
+  default_branch: '26.3'
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  trust: primary
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: project creation; Fabric Gradle layout; minimal Fabric examples
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: fabric-loader
+  name: Fabric Loader
+  category: fabric
+  tags:
+  - fabric
+  url: https://github.com/FabricMC/fabric-loader
+  canonical_url: https://github.com/FabricMC/fabric-loader
+  language: Java
+  license:
+    reported: Apache-2.0
+    api_reported: Apache-2.0
+    evidence_url: https://api.github.com/repos/FabricMC/fabric-loader
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: specialized
+  status: registered
+  use_for:
+  - loader internals
+  - environment handling
+  - classloading
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/FabricMC/fabric-loader
+    revision: null
+  archived: false
+  default_branch: master
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  trust: primary
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: loader internals; environment handling; classloading
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: fabric-loom
+  name: Fabric Loom
+  category: build-tooling
+  tags:
+  - build-tooling
+  url: https://github.com/FabricMC/fabric-loom
+  canonical_url: https://github.com/FabricMC/fabric-loom
+  language: Java
+  license:
+    reported: MIT
+    api_reported: MIT
+    evidence_url: https://api.github.com/repos/FabricMC/fabric-loom
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - Gradle
+  - development environment
+  - mappings
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/FabricMC/fabric-loom
+    revision: null
+  archived: false
+  default_branch: dev/1.18
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  trust: primary
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: Gradle; development environment; mappings
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: mixin
+  name: SpongePowered Mixin
+  category: minecraft-internals
+  tags:
+  - minecraft-internals
+  url: https://github.com/SpongePowered/Mixin
+  canonical_url: https://github.com/SpongePowered/Mixin
+  language: Java
+  license:
+    reported: MIT
+    api_reported: MIT
+    evidence_url: https://api.github.com/repos/SpongePowered/Mixin
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - Mixins
+  - injection concepts
+  - target resolution
+  - bytecode transformation
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/SpongePowered/Mixin
+    revision: null
+  archived: false
+  default_branch: master
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  trust: primary
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: Mixins; injection concepts; target resolution; bytecode
+      transformation
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: lithium
+  name: Lithium
+  category: minecraft-internals
+  tags:
+  - minecraft-internals
+  url: https://github.com/CaffeineMC/lithium
+  canonical_url: https://github.com/CaffeineMC/lithium
+  language: Java
+  license:
+    reported: LGPL-3.0
+    api_reported: LGPL-3.0
+    evidence_url: https://api.github.com/repos/CaffeineMC/lithium
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - Minecraft internals
+  - Mixins
+  - performance-sensitive Java
+  - optimization architecture
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/CaffeineMC/lithium
+    revision: null
+  archived: false
+  default_branch: develop
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: Minecraft internals; Mixins; performance-sensitive Java;
+      optimization architecture
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: sodium
+  name: Sodium
+  category: rendering
+  tags:
+  - rendering
+  - performance
+  - client
+  - internals
+  url: https://github.com/CaffeineMC/sodium
+  canonical_url: https://github.com/CaffeineMC/sodium
+  language: Java
+  license:
+    reported: PolyForm-Shield-1.0.0
+    api_reported: NOASSERTION
+    evidence_url: https://github.com/CaffeineMC/sodium/blob/8aa723c69af6ce40255862df6c3bf8c6cca9d883/LICENSE.md
+    review: Noncompete restrictions; preserve license and required notices; not unrestricted
+      open-source reuse.
+  priority: specialized
+  status: registered
+  use_for:
+  - rendering performance client internals
+  review:
+    status: revision-license-and-subsystem-inspected
+    checked_at: '2026-10-06'
+    revision: 8aa723c69af6ce40255862df6c3bf8c6cca9d883
+    evidence_url: https://github.com/CaffeineMC/sodium/tree/8aa723c69af6ce40255862df6c3bf8c6cca9d883
+  archived: false
+  default_branch: dev
+  environment:
+    minecraft: null
+    loader: fabric
+    mappings: null
+    side: client
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified. API license detection is NOASSERTION; license-file title was
+    inspected separately. Review terms carefully for any specific use.
+  trust: curated-reference
+  quality:
+    maintenance: active
+    maintenance_evidence: '2026-09-30T16:11:25Z'
+    historical_significance: not-assessed
+    technical_usefulness: rendering performance client internals
+    source_completeness: source-present-not-exhaustively-audited
+    unique_subsystems:
+    - rendering
+    - performance
+    - client
+    - internals
+    licensing_confidence: license-file-reviewed-use-unapproved
+    compatibility_limits:
+    - Reviewed default branch only; versions/loader/mappings must be resolved for
+      a selected revision.
+- id: iris
+  name: Iris
+  category: rendering
+  tags:
+  - rendering
+  url: https://github.com/IrisShaders/Iris
+  canonical_url: https://github.com/IrisShaders/Iris
+  language: Java
+  license:
+    reported: LGPL-3.0
+    api_reported: LGPL-3.0
+    evidence_url: https://api.github.com/repos/IrisShaders/Iris
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: specialized
+  status: registered
+  use_for:
+  - rendering
+  - shaders
+  - graphics pipelines
+  - complex Fabric projects
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/IrisShaders/Iris
+    revision: null
+  archived: false
+  default_branch: '26.1'
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: rendering; shaders; graphics pipelines; complex Fabric projects
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: mod-menu
+  name: Mod Menu
+  category: gui
+  tags:
+  - gui
+  - client-development
+  - settings
+  url: https://github.com/TerraformersMC/ModMenu
+  canonical_url: https://github.com/TerraformersMC/ModMenu
+  language: Java
+  license:
+    reported: MIT
+    api_reported: MIT
+    evidence_url: https://api.github.com/repos/TerraformersMC/ModMenu
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: specialized
+  status: registered
+  use_for:
+  - GUI
+  - mod menus
+  - Fabric client integration
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/TerraformersMC/ModMenu
+    revision: null
+  archived: false
+  default_branch: '26.4'
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: GUI; mod menus; Fabric client integration
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: yacl
+  name: YACL
+  category: gui
+  tags:
+  - gui
+  - client-development
+  - settings
+  url: https://github.com/isXander/YetAnotherConfigLib
+  canonical_url: https://github.com/isXander/YetAnotherConfigLib
+  language: Java
+  license:
+    reported: LGPL-3.0
+    api_reported: LGPL-3.0
+    evidence_url: https://api.github.com/repos/isXander/YetAnotherConfigLib
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: specialized
+  status: registered
+  use_for:
+  - configuration GUIs
+  - settings interfaces
+  - client configuration
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/isXander/YetAnotherConfigLib
+    revision: null
+  archived: false
+  default_branch: main
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: configuration GUIs; settings interfaces; client configuration
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: baritone
+  name: Baritone
+  category: pathfinding
+  tags:
+  - pathfinding
+  url: https://github.com/cabaletta/baritone
+  canonical_url: https://github.com/cabaletta/baritone
+  language: Java
+  license:
+    reported: LGPL-3.0
+    api_reported: LGPL-3.0
+    evidence_url: https://api.github.com/repos/cabaletta/baritone
+    review: preliminary; exact terms and intended-use compatibility pending
+  priority: core
+  status: registered
+  use_for:
+  - pathfinding
+  - player interaction
+  - world analysis
+  - commands
+  - Java architecture
+  review:
+    status: metadata-inspected
+    checked_at: '2026-10-06'
+    evidence_url: https://api.github.com/repos/cabaletta/baritone
+    revision: null
+  archived: false
+  default_branch: 1.21.4
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Reference-first; no target-project, exact-revision, provenance, or rights
+      approval has been completed.
+  notes: Intended uses are curated proposals; quality, provenance, and version applicability
+    remain unverified.
+  quality:
+    maintenance: unknown
+    historical_significance: not-assessed
+    technical_usefulness: pathfinding; player interaction; world analysis; commands;
+      Java architecture
+    source_completeness: not-assessed
+    unique_subsystems: []
+    licensing_confidence: preliminary
+    compatibility_limits:
+    - Compatibility is based on retained registry metadata and has not been independently re-audited.
+- id: viafabricplus
+  name: ViaFabricPlus
+  url: https://github.com/ViaVersion/ViaFabricPlus
+  canonical_url: https://github.com/ViaVersion/ViaFabricPlus
+  category: mod-reference
+  priority: specialized
+  status: registered
+  language: Java
+  historical: false
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  default_branch: ver/26.3
+  archived: false
+  trust: curated-reference
+  tags:
+  - protocol
+  - compatibility
+  - cross-version
+  - client
+  use_for:
+  - protocol compatibility cross-version client
+  environment:
+    minecraft: null
+    loader: fabric
+    mappings: null
+    side: client
+  license:
+    reported: GPL-3.0
+    api_reported: GPL-3.0
+    evidence_url: https://github.com/ViaVersion/ViaFabricPlus/blob/9913d32266be9243ee31fc84539913ae79ae6aa2/LICENSE
+    review: GPL terms and corresponding-source obligations require intended-use review.
+  review:
+    status: revision-license-and-subsystem-inspected
+    checked_at: '2026-10-06'
+    revision: 9913d32266be9243ee31fc84539913ae79ae6aa2
+    evidence_url: https://github.com/ViaVersion/ViaFabricPlus/tree/9913d32266be9243ee31fc84539913ae79ae6aa2
+  quality:
+    maintenance: active
+    maintenance_evidence: '2026-10-02T12:09:58Z'
+    historical_significance: not-assessed
+    technical_usefulness: protocol compatibility cross-version client
+    source_completeness: source-present-not-exhaustively-audited
+    unique_subsystems:
+    - protocol
+    - compatibility
+    - cross-version
+    - client
+    licensing_confidence: license-file-reviewed-use-unapproved
+    compatibility_limits:
+    - Reviewed default branch only; versions/loader/mappings must be resolved for
+      a selected revision.
+- id: viaversion
+  name: ViaVersion
+  url: https://github.com/ViaVersion/ViaVersion
+  canonical_url: https://github.com/ViaVersion/ViaVersion
+  category: mod-reference
+  priority: specialized
+  status: registered
+  language: Java
+  historical: false
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  default_branch: master
+  archived: false
+  trust: curated-reference
+  tags:
+  - protocol
+  - translation
+  - packet
+  - version
+  - abstraction
+  use_for:
+  - protocol translation packet version abstraction
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+    side: null
+  license:
+    reported: GPL-3.0
+    api_reported: GPL-3.0
+    evidence_url: https://github.com/ViaVersion/ViaVersion/blob/309c3e57c1b5ec5e4a1faa9333dda62cbafca7ea/LICENSE
+    review: GPL terms; protocol coverage does not establish loader or client API compatibility.
+  review:
+    status: revision-license-and-subsystem-inspected
+    checked_at: '2026-10-06'
+    revision: 309c3e57c1b5ec5e4a1faa9333dda62cbafca7ea
+    evidence_url: https://github.com/ViaVersion/ViaVersion/tree/309c3e57c1b5ec5e4a1faa9333dda62cbafca7ea
+  quality:
+    maintenance: active
+    maintenance_evidence: '2026-10-04T06:55:56Z'
+    historical_significance: not-assessed
+    technical_usefulness: protocol translation packet version abstraction
+    source_completeness: source-present-not-exhaustively-audited
+    unique_subsystems:
+    - protocol
+    - translation
+    - packet
+    - version
+    - abstraction
+    licensing_confidence: license-file-reviewed-use-unapproved
+    compatibility_limits:
+    - Reviewed default branch only; versions/loader/mappings must be resolved for
+      a selected revision.
+- id: mouse-tweaks
+  name: MouseTweaks
+  url: https://github.com/YaLTeR/MouseTweaks
+  canonical_url: https://github.com/YaLTeR/MouseTweaks
+  category: mod-reference
+  priority: specialized
+  status: registered
+  language: Java
+  historical: false
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  default_branch: master
+  archived: false
+  trust: curated-reference
+  tags:
+  - input
+  - inventory
+  - interaction
+  - mouse
+  use_for:
+  - input inventory interaction mouse
+  environment:
+    minecraft: '26.3'
+    loader: null
+    mappings: null
+    side: client
+  license:
+    reported: BSD-3-Clause
+    api_reported: BSD-3-Clause
+    evidence_url: https://github.com/YaLTeR/MouseTweaks/blob/e8ecd08ed94192f6f19d3cbb630707c8670a4d66/LICENSE
+    review: Preserve source/binary notices and disclaimer; no endorsement permission.
+  review:
+    status: revision-license-and-subsystem-inspected
+    checked_at: '2026-10-06'
+    revision: e8ecd08ed94192f6f19d3cbb630707c8670a4d66
+    evidence_url: https://github.com/YaLTeR/MouseTweaks/tree/e8ecd08ed94192f6f19d3cbb630707c8670a4d66
+  quality:
+    maintenance: active
+    maintenance_evidence: '2026-09-20T19:23:10Z'
+    historical_significance: not-assessed
+    technical_usefulness: input inventory interaction mouse
+    source_completeness: source-present-not-exhaustively-audited
+    unique_subsystems:
+    - input
+    - inventory
+    - interaction
+    - mouse
+    licensing_confidence: license-file-reviewed-use-unapproved
+    compatibility_limits:
+    - Reviewed default branch only; versions/loader/mappings must be resolved for
+      a selected revision.
+- id: fabric-carpet
+  name: fabric-carpet
+  url: https://github.com/gnembon/fabric-carpet
+  canonical_url: https://github.com/gnembon/fabric-carpet
+  category: mod-reference
+  priority: specialized
+  status: registered
+  language: Java
+  historical: false
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  default_branch: master
+  archived: false
+  trust: curated-reference
+  tags:
+  - game
+  - mechanics
+  - scripting
+  - scarpet
+  - tick
+  - testing
+  use_for:
+  - game mechanics scripting scarpet tick testing
+  environment:
+    minecraft: 26.4-snapshot-2
+    loader: fabric
+    mappings: null
+    side: null
+  license:
+    reported: MIT
+    api_reported: MIT
+    evidence_url: https://github.com/gnembon/fabric-carpet/blob/95e46a0bec0bb4b972c37f9977d8a8142788f3ba/LICENSE
+    review: Preserve copyright/permission notice. Snapshot branch is not modern stable
+      API evidence.
+  review:
+    status: revision-license-and-subsystem-inspected
+    checked_at: '2026-10-06'
+    revision: 95e46a0bec0bb4b972c37f9977d8a8142788f3ba
+    evidence_url: https://github.com/gnembon/fabric-carpet/tree/95e46a0bec0bb4b972c37f9977d8a8142788f3ba
+  quality:
+    maintenance: active
+    maintenance_evidence: '2026-10-01T13:27:11Z'
+    historical_significance: not-assessed
+    technical_usefulness: game mechanics scripting scarpet tick testing
+    source_completeness: source-present-not-exhaustively-audited
+    unique_subsystems:
+    - game
+    - mechanics
+    - scripting
+    - scarpet
+    - tick
+    - testing
+    licensing_confidence: license-file-reviewed-use-unapproved
+    compatibility_limits:
+    - Reviewed default branch only; versions/loader/mappings must be resolved for
+      a selected revision.
+- id: owo-lib
+  name: owo-lib UI
+  category: library
+  tags:
+  - gui
+  - screen
+  - layout
+  - widgets
+  - input
+  - focus
+  url: https://github.com/wisp-forest/owo-lib
+  canonical_url: https://github.com/wisp-forest/owo-lib
+  language: Java
+  license:
+    reported: MIT
+    evidence_url: https://github.com/wisp-forest/owo-lib/blob/21629d8b4ef55c9a2d902b9f04ce48364989f57b/LICENSE
+    review: License and selected source inspected; reuse remains unapproved
+  priority: specialized
+  status: registered
+  use_for: &id001
+  - custom screen component layout
+  - widget input focus
+  - BaseOwoScreen FlowLayout
+  review:
+    status: selected-source-inspected
+    checked_at: '2026-10-10'
+    revision: 21629d8b4ef55c9a2d902b9f04ce48364989f57b
+    evidence_url: https://github.com/wisp-forest/owo-lib/tree/21629d8b4ef55c9a2d902b9f04ce48364989f57b
+  archived: false
+  default_branch: '1.21'
+  environment:
+    minecraft: '1.21'
+    loader: fabric
+    mappings: yarn
+    side: client
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  notes: Reference only, not a recommended dependency by default. Selected branch is a reviewed retrieval
+    ref; it can advance after review. Recheck the fetched revision and target API before applying an example.
+  quality:
+    maintenance: active
+    source_completeness: selected-source-inspected
+    unique_subsystems: *id001
+    licensing_confidence: license-file-inspected
+    compatibility_limits:
+    - Only the declared Minecraft version/mappings were inspected; null fields are unknown, not compatibility
+      claims.
+- id: cloth-config
+  name: Cloth Config screens
+  category: library
+  tags:
+  - gui
+  - screen
+  - settings
+  - config
+  - widgets
+  url: https://github.com/shedaniel/cloth-config
+  canonical_url: https://github.com/shedaniel/cloth-config
+  language: Java
+  license:
+    reported: LGPL-3.0-or-later
+    evidence_url: https://github.com/shedaniel/cloth-config/blob/979d516e9743d10879053c5fe8ae00c2b4ffd708/LICENSE.md
+    review: License and selected source inspected; reuse remains unapproved
+  priority: specialized
+  status: registered
+  use_for: &id002
+  - settings screen categories
+  - ConfigBuilder ConfigEntryBuilder
+  review:
+    status: selected-source-inspected
+    checked_at: '2026-10-10'
+    revision: 979d516e9743d10879053c5fe8ae00c2b4ffd708
+    evidence_url: https://github.com/shedaniel/cloth-config/tree/979d516e9743d10879053c5fe8ae00c2b4ffd708
+  archived: false
+  default_branch: v15
+  environment:
+    minecraft: '1.21'
+    loader: null
+    mappings: mojang-official
+    side: client
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  notes: Reference only, not a recommended dependency by default. Selected branch is a reviewed retrieval
+    ref; it can advance after review. Recheck the fetched revision and target API before applying an example.
+  quality:
+    maintenance: active
+    source_completeness: selected-source-inspected
+    unique_subsystems: *id002
+    licensing_confidence: license-file-inspected
+    compatibility_limits:
+    - Only the declared Minecraft version/mappings were inspected; null fields are unknown, not compatibility
+      claims.
+- id: mixinextras
+  name: MixinExtras
+  category: library
+  tags:
+  - mixin
+  - injector
+  - WrapOperation
+  - ModifyExpressionValue
+  - Local
+  url: https://github.com/LlamaLad7/MixinExtras
+  canonical_url: https://github.com/LlamaLad7/MixinExtras
+  language: Java
+  license:
+    reported: MIT
+    evidence_url: https://github.com/LlamaLad7/MixinExtras/blob/613b418327594c46ef13ee28971baa5d804462cc/LICENSE
+    review: License and selected source inspected; reuse remains unapproved
+  priority: specialized
+  status: registered
+  use_for: &id003
+  - composable operation wrappers
+  - WrapOperation handler signature
+  - MixinExtras injectors
+  review:
+    status: selected-source-inspected
+    checked_at: '2026-10-10'
+    revision: 613b418327594c46ef13ee28971baa5d804462cc
+    evidence_url: https://github.com/LlamaLad7/MixinExtras/tree/613b418327594c46ef13ee28971baa5d804462cc
+  archived: false
+  default_branch: master
+  environment:
+    minecraft: null
+    loader: null
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+  notes: Reference only, not a recommended dependency by default. Selected branch is a reviewed retrieval
+    ref; it can advance after review. Recheck the fetched revision and target API before applying an example.
+  quality:
+    maintenance: active
+    source_completeness: selected-source-inspected
+    unique_subsystems: *id003
+    licensing_confidence: license-file-inspected
+    compatibility_limits:
+    - Only the declared Minecraft version/mappings were inspected; null fields are unknown, not compatibility
+      claims.
+
+- id: liquidbounce
+  name: LiquidBounce automation architecture
+  category: client
+  tags:
+  - automation
+  - ownership
+  - arbitration
+  - rotation
+  - inventory
+  - cancellation
+  - state-machine
+  url: https://github.com/CCBlueX/LiquidBounce
+  canonical_url: https://github.com/CCBlueX/LiquidBounce
+  language: Kotlin
+  license:
+    reported: GPL-3.0-or-later
+    evidence_url: https://github.com/CCBlueX/LiquidBounce/blob/8c674cf33a61ea8f04f2a6f001a81894223b3ab0/LICENSE
+    review: LICENSE and studied Kotlin file headers inspected; component and intended-use
+      review still required
+  priority: specialized
+  status: registered
+  use_for:
+  - temporary ownership and release
+  - request priorities and expiry
+  - inventory action sequencing
+  - cancellable tick waits
+  review:
+    status: source-inspected
+    checked_at: '2026-10-11'
+    revision: 8c674cf33a61ea8f04f2a6f001a81894223b3ab0
+    evidence_url: https://github.com/CCBlueX/LiquidBounce/tree/8c674cf33a61ea8f04f2a6f001a81894223b3ab0/src/main/kotlin/net/ccbluex/liquidbounce
+  archived: false
+  default_branch: nextgen
+  environment:
+    minecraft: '26.3'
+    loader: fabric
+    mappings: null
+  code_reuse:
+    allowed: false
+    generated_derivation_allowed: false
+    redistribution_allowed: false
+    reason: Architecture reference only; no source incorporated. Copyleft and component
+      rights require concrete distribution review.
+  notes: Reviewed nextgen targets 26.3, Java 25, Loom 1.18-SNAPSHOT, Loader 0.19.5
+    and Fabric API 0.160.5+26.3. Not exact 1.21.11 evidence. Moving branch retrieval
+    records the actual fetched revision; this review does not approve later content.
+    Do not import evasion logic, randomization or a manager hierarchy. See docs/RETRIEVAL.md
+    for traced paths and limitations.
+  quality:
+    maintenance: active
+    unique_subsystems:
+    - ownership
+    - arbitration
+    - cancellation
+    compatibility_limits:
+    - Architecture only for other game versions; inferred server state is not confirmation.

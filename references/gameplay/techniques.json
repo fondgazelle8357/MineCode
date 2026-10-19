@@ -1,0 +1,882 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "w-tap",
+      "name": "W-tap",
+      "aliases": [
+        "wtap",
+        "sprint reset"
+      ],
+      "category": "sword",
+      "definition": "Briefly reset forward movement between hits.",
+      "mechanic": "Restarting sprint can renew sprint-hit knockback.",
+      "inputs": [
+        "forward movement",
+        "sprint",
+        "attack"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "s-tap"
+      ],
+      "development_relevance": "MineCode analysis: inspect movement, attack cooldown and target state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized movement, attack cooldown and target state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "Not every combat implementation resets sprint identically."
+    },
+    {
+      "id": "s-tap",
+      "name": "S-tap",
+      "aliases": [
+        "stap"
+      ],
+      "category": "sword",
+      "definition": "Briefly move backward between attacks.",
+      "mechanic": "Combines spacing with sprint interruption.",
+      "inputs": [
+        "backward movement",
+        "sprint",
+        "attack"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "w-tap"
+      ],
+      "development_relevance": "MineCode analysis: inspect movement, attack cooldown and target state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized movement, attack cooldown and target state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "Spacing outcomes vary with opponent movement."
+    },
+    {
+      "id": "hit-select",
+      "name": "Hit select",
+      "aliases": [
+        "hit selection"
+      ],
+      "category": "sword",
+      "definition": "Deliberately take an opening hit before counterattacking.",
+      "mechanic": "Uses the resulting movement and attack timing.",
+      "inputs": [
+        "movement",
+        "delayed attack"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "p-crit"
+      ],
+      "development_relevance": "MineCode analysis: inspect movement, attack cooldown and target state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized movement, attack cooldown and target state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "An informal strategy, not a guaranteed favorable trade."
+    },
+    {
+      "id": "p-crit",
+      "name": "P-crit",
+      "aliases": [
+        "pcrit",
+        "p critting"
+      ],
+      "category": "sword",
+      "definition": "Use incoming knockback airtime for a falling critical.",
+      "mechanic": "A falling attack can satisfy critical conditions.",
+      "inputs": [
+        "attack",
+        "airborne movement"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "hit-select"
+      ],
+      "development_relevance": "MineCode analysis: inspect movement, attack cooldown and target state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized movement, attack cooldown and target state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "The term and execution vary between combat communities."
+    },
+    {
+      "id": "jump-reset",
+      "name": "Jump reset",
+      "aliases": [
+        "jump resetting"
+      ],
+      "category": "movement",
+      "definition": "Time a jump near an incoming hit.",
+      "mechanic": "Jump state influences knockback movement.",
+      "inputs": [
+        "jump",
+        "movement"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "hit-select"
+      ],
+      "development_relevance": "MineCode analysis: inspect velocity, ground state and incoming damage before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized velocity, ground state and incoming damage. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "No universal timing window or knockback reduction is asserted."
+    },
+    {
+      "id": "smash",
+      "name": "Mace smash",
+      "aliases": [
+        "slam",
+        "smash attack"
+      ],
+      "category": "mace",
+      "definition": "Strike with a mace while falling to deal increased damage.",
+      "mechanic": "Successful smash damage depends on falling distance.",
+      "inputs": [
+        "fall",
+        "aim",
+        "mace attack"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "stun-slam",
+        "wind-burst-chain"
+      ],
+      "development_relevance": "MineCode analysis: inspect fall distance, held item, enchantments and target shield state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized fall distance, held item, enchantments and target shield state. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Mace (2024-10-03)",
+          "url": "https://www.minecraft.net/en-us/article/mace",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Ordinary mace swings and smash attacks are distinct."
+    },
+    {
+      "id": "stun-slam",
+      "name": "Stun slam",
+      "aliases": [
+        "stunslam"
+      ],
+      "category": "mace",
+      "definition": "Disable a shield with an axe, then follow with a mace smash.",
+      "mechanic": "Combines shield disable and a falling mace attack.",
+      "inputs": [
+        "axe attack",
+        "switch weapon",
+        "fall",
+        "mace attack"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "axe-disable",
+        "smash"
+      ],
+      "development_relevance": "MineCode analysis: inspect fall distance, held item, enchantments and target shield state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized fall distance, held item, enchantments and target shield state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Fabiderpinguin: MaceTrainer README",
+          "url": "https://github.com/Fabiderpinguin/MaceTrainer",
+          "kind": "maintainer",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        },
+        {
+          "title": "Mojang / Duncan Geere: Mace (2024-10-03)",
+          "url": "https://www.minecraft.net/en-us/article/mace",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Maintainer terminology from a small Paper 1.21.8 trainer; no universal delay validated."
+    },
+    {
+      "id": "breach-swap",
+      "name": "Breach swap",
+      "aliases": [
+        "breach swapping",
+        "attribute swapping"
+      ],
+      "category": "mace",
+      "definition": "Switch weapons around an attack to combine attack attributes with Breach effects.",
+      "mechanic": "Community-reported attribute-update timing interaction.",
+      "inputs": [
+        "weapon selection",
+        "attack"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "hotbar-selection",
+        "smash"
+      ],
+      "development_relevance": "MineCode analysis: inspect fall distance, held item, enchantments and target shield state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized fall distance, held item, enchantments and target shield state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "SalmonBlock: Paper attribute swap fix README",
+          "url": "https://github.com/SalmonBlock/paper-attribute-swap-fix/blob/main/README.md",
+          "kind": "maintainer",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        },
+        {
+          "title": "Mojang: 26.2 Pre-Release 3 (2026-06-02)",
+          "url": "https://www.minecraft.net/en-us/article/minecraft-26-2-pre-release-3",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Mojang reverted a fix in 26.2 pre3 but calls the interaction unsupported and plans a future fix. Later status must be rechecked."
+    },
+    {
+      "id": "wind-burst-chain",
+      "name": "Wind Burst chain",
+      "aliases": [
+        "mace chaining"
+      ],
+      "category": "mace",
+      "definition": "Chain falling attacks using a Wind Burst enchanted mace.",
+      "mechanic": "A successful smash can launch the attacker upward again.",
+      "inputs": [
+        "mace attack",
+        "airborne aim"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "smash"
+      ],
+      "development_relevance": "MineCode analysis: inspect fall distance, held item, enchantments and target shield state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized fall distance, held item, enchantments and target shield state. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Mace (2024-10-03)",
+          "url": "https://www.minecraft.net/en-us/article/mace",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Requires the enchantment and successful subsequent hits; landing outcomes are not guaranteed."
+    },
+    {
+      "id": "pearl-throw",
+      "name": "Pearl teleport",
+      "aliases": [
+        "ender pearl throw"
+      ],
+      "category": "pearls",
+      "definition": "Throw a pearl to teleport to its collision destination.",
+      "mechanic": "Pearl impact relocates its owner.",
+      "inputs": [
+        "aim",
+        "use pearl"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "pearl-clutch",
+        "pearl-catch"
+      ],
+      "development_relevance": "MineCode analysis: inspect projectile ownership, collision and teleport state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized projectile ownership, collision and teleport state. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Ender Pearl (2025-02-18)",
+          "url": "https://www.minecraft.net/en-us/article/ender-pearl",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Collision, damage and loading behavior require exact-version checks."
+    },
+    {
+      "id": "pearl-clutch",
+      "name": "Pearl clutch",
+      "aliases": [
+        "ender pearl clutch"
+      ],
+      "category": "pearls",
+      "definition": "Attempt to recover from a fall by teleporting with a pearl.",
+      "mechanic": "A recovery application of pearl impact teleportation.",
+      "inputs": [
+        "aim at landing surface",
+        "use pearl"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "pearl-throw"
+      ],
+      "development_relevance": "MineCode analysis: inspect projectile ownership, collision and teleport state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized projectile ownership, collision and teleport state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Ender Pearl (2025-02-18)",
+          "url": "https://www.minecraft.net/en-us/article/ender-pearl",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "The recovery application is MineCode terminology analysis; source establishes teleportation, not a guaranteed rescue."
+    },
+    {
+      "id": "pearl-catch",
+      "name": "Pearl catch",
+      "aliases": [
+        "pearl catching"
+      ],
+      "category": "pearls",
+      "definition": "Pursue an opponent by pearling toward their anticipated destination.",
+      "mechanic": "Uses teleport positioning.",
+      "inputs": [
+        "observe trajectory",
+        "aim",
+        "use pearl"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "instant-pearl-catch"
+      ],
+      "development_relevance": "MineCode analysis: inspect projectile ownership, collision and teleport state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized projectile ownership, collision and teleport state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        },
+        {
+          "title": "Mojang / Duncan Geere: Ender Pearl (2025-02-18)",
+          "url": "https://www.minecraft.net/en-us/article/ender-pearl",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Ambiguous term: some mace communities instead mean pearl/wind-charge collision. Ask which meaning is intended."
+    },
+    {
+      "id": "instant-pearl-catch",
+      "name": "Instant Pearl Catch",
+      "aliases": [
+        "IPC"
+      ],
+      "category": "pearls",
+      "definition": "Closely sequence a pearl and wind charge so their projectiles interact.",
+      "mechanic": "The cited server mod changes same-tick collision handling.",
+      "inputs": [
+        "use pearl",
+        "select wind charge",
+        "use wind charge"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "pearl-catch",
+        "wind-charge-jump"
+      ],
+      "development_relevance": "MineCode analysis: inspect projectile ownership, collision and teleport state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized projectile ownership, collision and teleport state. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Instant Pearl Catch maintainer: project description",
+          "url": "https://modrinth.com/mod/instantpearlcatch",
+          "kind": "maintainer",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "Maintainer description is not vanilla verification. Advertised support: 1.21\u20131.21.11 and 26.1\u201326.1.2; behavior depends on server-side changes and tick order."
+    },
+    {
+      "id": "wind-charge-jump",
+      "name": "Wind charge jump",
+      "aliases": [
+        "wind jumping"
+      ],
+      "category": "wind-charge",
+      "definition": "Use a wind charge burst to propel yourself.",
+      "mechanic": "Burst knockback can provide movement.",
+      "inputs": [
+        "aim near feet",
+        "use wind charge",
+        "jump"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "smash"
+      ],
+      "development_relevance": "MineCode analysis: inspect projectile collision and movement before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized projectile collision and movement. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang: Snapshot 24w06a",
+          "url": "https://www.minecraft.net/zh-hans/article/minecraft-snapshot-24w06a",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Snapshot documentation establishes the concept; exact release physics were not measured."
+    },
+    {
+      "id": "wind-charge-deflect",
+      "name": "Wind charge deflection",
+      "aliases": [
+        "wind charge reflect"
+      ],
+      "category": "wind-charge",
+      "definition": "Strike an incoming wind charge to redirect it.",
+      "mechanic": "The projectile supports deflection.",
+      "inputs": [
+        "aim",
+        "attack"
+      ],
+      "version_relevance": "Java 1.21-era mechanics; exact later versions require revalidation.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "wind-charge-jump"
+      ],
+      "development_relevance": "MineCode analysis: inspect projectile collision and movement before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized projectile collision and movement. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Wind Charge (2024-08-29)",
+          "url": "https://www.minecraft.net/en-us/article/wind-charge",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Arrival time and collision handling depend on latency and version."
+    },
+    {
+      "id": "axe-disable",
+      "name": "Axe shield disable",
+      "aliases": [
+        "shield stun",
+        "shield disable"
+      ],
+      "category": "shield",
+      "definition": "Hit a blocking opponent with an axe to interrupt shield use.",
+      "mechanic": "Axes can disable shields.",
+      "inputs": [
+        "axe attack"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "stun-slam",
+        "shield-block"
+      ],
+      "development_relevance": "MineCode analysis: inspect active item, facing and shield disable state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized active item, facing and shield disable state. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Mace (2024-10-03)",
+          "url": "https://www.minecraft.net/en-us/article/mace",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Do not assume a fixed chance or duration across versions and plugins."
+    },
+    {
+      "id": "shield-block",
+      "name": "Shield block",
+      "aliases": [
+        "shield blocking"
+      ],
+      "category": "shield",
+      "definition": "Raise a shield against an incoming attack.",
+      "mechanic": "Shield protection depends on attack type and direction.",
+      "inputs": [
+        "hold use",
+        "face attack"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "axe-disable"
+      ],
+      "development_relevance": "MineCode analysis: inspect active item, facing and shield disable state before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized active item, facing and shield disable state. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Shield",
+          "url": "https://www.minecraft.net/pl-pl/article/taking-inventory--shield",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Not all damage is blockable; item components and server settings can change rules."
+    },
+    {
+      "id": "crystal-place",
+      "name": "Crystal placement",
+      "aliases": [
+        "placing crystals"
+      ],
+      "category": "crystal",
+      "definition": "Place an end crystal on a valid support block.",
+      "mechanic": "Placement requires an accepted base and clearance.",
+      "inputs": [
+        "select crystal",
+        "aim at base",
+        "use"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "crystal-detonate"
+      ],
+      "development_relevance": "MineCode analysis: inspect placement validity, entity identity and explosion exposure before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized placement validity, entity identity and explosion exposure. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "Check placement rules for the exact server/version; no damage calculator is supplied."
+    },
+    {
+      "id": "crystal-detonate",
+      "name": "Crystal detonation",
+      "aliases": [
+        "crystalling"
+      ],
+      "category": "crystal",
+      "definition": "Damage an end crystal to cause an explosion.",
+      "mechanic": "An explosive combat interaction.",
+      "inputs": [
+        "aim at crystal",
+        "attack"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "crystal-place",
+        "retotem"
+      ],
+      "development_relevance": "MineCode analysis: inspect placement validity, entity identity and explosion exposure before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized placement validity, entity identity and explosion exposure. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "Server protections, damage rules and exposure affect outcomes."
+    },
+    {
+      "id": "anchor-charge",
+      "name": "Anchor charging",
+      "aliases": [
+        "charge anchor"
+      ],
+      "category": "anchor",
+      "definition": "Use glowstone on a respawn anchor to add charge.",
+      "mechanic": "Charged anchors retain charge state.",
+      "inputs": [
+        "select glowstone",
+        "use anchor"
+      ],
+      "version_relevance": "Java 1.16+ anchor availability; dimension configuration varies in later releases.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "anchor-detonate"
+      ],
+      "development_relevance": "MineCode analysis: inspect block state, dimension rules and held item before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized block state, dimension rules and held item. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang: Nether Update on Java (2020-06-23)",
+          "url": "https://www.minecraft.net/en-us/article/nether-update-java",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Charging alone is different from activating a charged anchor."
+    },
+    {
+      "id": "anchor-detonate",
+      "name": "Anchor sequence",
+      "aliases": [
+        "anchor PvP",
+        "anchor detonation"
+      ],
+      "category": "anchor",
+      "definition": "Place, charge, then activate an anchor in an environment where it explodes.",
+      "mechanic": "Dimension rules determine whether activation respawns or explodes.",
+      "inputs": [
+        "place anchor",
+        "charge",
+        "change held item",
+        "use anchor"
+      ],
+      "version_relevance": "Java 1.16+ anchor availability; dimension configuration varies in later releases.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "anchor-charge",
+        "retotem"
+      ],
+      "development_relevance": "MineCode analysis: inspect block state, dimension rules and held item before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized block state, dimension rules and held item. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Mojang: Nether Update on Java (2020-06-23)",
+          "url": "https://www.minecraft.net/en-us/article/nether-update-java",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        },
+        {
+          "title": "Mojang: Java 1.21.11 dimension attributes",
+          "url": "https://www.minecraft.net/it-it/article/minecraft-java-edition-1-21-11",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        }
+      ],
+      "known_uncertainty": "Check dimension attributes and plugins; do not generalize explosion behavior to every dimension."
+    },
+    {
+      "id": "retotem",
+      "name": "Retoteming",
+      "aliases": [
+        "retotem",
+        "totem refill"
+      ],
+      "category": "inventory",
+      "definition": "Replace a consumed totem with another held totem.",
+      "mechanic": "A totem protects only when held and is consumed on activation.",
+      "inputs": [
+        "select inventory slot",
+        "transfer to hand"
+      ],
+      "version_relevance": "Java 1.11+ totem availability; check current activation and inventory rules.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "offhand-swap"
+      ],
+      "development_relevance": "MineCode analysis: inspect selected slot, screen state and inventory acknowledgement before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized selected slot, screen state and inventory acknowledgement. No automation implemented.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "title": "Mojang / Duncan Geere: Totem of Undying (2021-07-16)",
+          "url": "https://www.minecraft.net/de-de/article/taking-inventory--totem-undying",
+          "kind": "official",
+          "checked_at": "2026-10-07",
+          "supports": "Underlying mechanic at the publication version; not all later releases."
+        },
+        {
+          "title": "Minecraft Wiki contributors: Player versus Player",
+          "url": "https://minecraft.wiki/w/Tutorial:Player_versus_Player",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Community term/context; no independent execution test."
+        }
+      ],
+      "known_uncertainty": "GUI state, available stock and server inventory acknowledgement matter; no fixed refill time asserted."
+    },
+    {
+      "id": "offhand-swap",
+      "name": "Offhand swap",
+      "aliases": [
+        "swap hands"
+      ],
+      "category": "inventory",
+      "definition": "Exchange the selected main-hand item with the offhand item.",
+      "mechanic": "Java provides a configurable swap-hands binding.",
+      "inputs": [
+        "swap-hands key"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "retotem",
+        "hotbar-selection"
+      ],
+      "development_relevance": "MineCode analysis: inspect selected slot, screen state and inventory acknowledgement before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized selected slot, screen state and inventory acknowledgement. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Dual wielding tutorial",
+          "url": "https://minecraft.wiki/w/Tutorial%3ADual_wielding",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Basic hand/slot behavior from the search-index excerpt; full page fetch was unavailable."
+        }
+      ],
+      "known_uncertainty": "Default bindings are user-configurable; do not hardcode F or assume Bedrock parity."
+    },
+    {
+      "id": "hotbar-selection",
+      "name": "Hotbar selection",
+      "aliases": [
+        "hotbar switching"
+      ],
+      "category": "inventory",
+      "definition": "Select a hotbar slot to change the active main-hand item.",
+      "mechanic": "Selection and offhand exchange are separate operations.",
+      "inputs": [
+        "hotbar key",
+        "scroll selection"
+      ],
+      "version_relevance": "Java modern combat context (1.9+); this is not a tested compatibility range.",
+      "server_dependence": "Confirm server authority, combat plugins and server rules.",
+      "timing_dependence": "Measure tick order, latency and input timing; no universal delay.",
+      "client_server_relevance": "Distinguish client prediction/input from server-confirmed outcomes.",
+      "related": [
+        "offhand-swap",
+        "breach-swap"
+      ],
+      "development_relevance": "MineCode analysis: inspect selected slot, screen state and inventory acknowledgement before choosing implementation APIs.",
+      "automation_relevance": "MineCode analysis: assistance needs authorized scope and synchronized selected slot, screen state and inventory acknowledgement. No automation implemented.",
+      "confidence": "high",
+      "sources": [
+        {
+          "title": "Minecraft Wiki contributors: Dual wielding tutorial",
+          "url": "https://minecraft.wiki/w/Tutorial%3ADual_wielding",
+          "kind": "community-documentation",
+          "checked_at": "2026-10-07",
+          "supports": "Basic hand/slot behavior from the search-index excerpt; full page fetch was unavailable."
+        }
+      ],
+      "known_uncertainty": "Held item selection is not inventory transfer; keybindings and screen focus matter."
+    }
+  ]
+}

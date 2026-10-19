@@ -1,0 +1,5 @@
+tiny	2	0	intermediary	named
+c	net/minecraft/class_9779	net/minecraft/client/render/RenderTickCounter
+c	net/minecraft/class_329	net/minecraft/client/gui/hud/InGameHud
+	m	(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V	method_1753	render
+c	net/minecraft/class_332	net/minecraft/client/gui/DrawContext

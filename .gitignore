@@ -1,0 +1,39 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local build/cache outputs
+.gradle/
+build/
+out/
+target/
+node_modules/
+__pycache__/
+*.pyc
+
+# Local development state and generated artifacts
+.agents/
+.codex/
+.claude/
+.mcp.json
+.local/
+artifacts/
+
+.venv/
+*.egg-info/
+
+# Disposable external retrieval snapshots (never vendor)
+.minecode/
+reference-cache/
+.cache/
+dist/

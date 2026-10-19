@@ -1,0 +1,1508 @@
+{
+  "schema_version": 1,
+  "scope": "curated-developer-knowledge",
+  "sources": [
+    {
+      "id": "fabric-networking-current",
+      "name": "Fabric client server networking",
+      "url": "https://docs.fabricmc.net/develop/networking",
+      "canonical_url": "https://docs.fabricmc.net/develop/networking",
+      "category": "developer-knowledge",
+      "source_type": "official-documentation",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "networking",
+        "client",
+        "server",
+        "packet",
+        "payload"
+      ],
+      "use_for": [
+        "Fabric client server networking"
+      ],
+      "environment": {
+        "minecraft": "26.2",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/networking",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "fabric-networking-javadoc-121",
+      "name": "Fabric 1.21 client server networking API Javadocs",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/package-summary.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/package-summary.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "networking",
+        "client",
+        "server",
+        "packet",
+        "payload"
+      ],
+      "use_for": [
+        "Fabric 1.21.1 client server networking"
+      ],
+      "environment": {
+        "minecraft": "1.21",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/package-summary.html",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash. Version-specific API reference used because the official 1.21.1 guide link returned HTTP 404 during validation."
+    },
+    {
+      "id": "fabric-loom-docs",
+      "name": "Fabric Loom Gradle documentation",
+      "url": "https://docs.fabricmc.net/develop/loom/",
+      "canonical_url": "https://docs.fabricmc.net/develop/loom/",
+      "category": "developer-knowledge",
+      "source_type": "official-documentation",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "loom",
+        "gradle",
+        "mappings",
+        "dependencies",
+        "migration"
+      ],
+      "use_for": [
+        "Fabric Loom Gradle documentation"
+      ],
+      "environment": {
+        "minecraft": "26.2",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/loom/",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "fabric-loader-docs",
+      "name": "Fabric Loader documentation",
+      "url": "https://docs.fabricmc.net/develop/loader/",
+      "canonical_url": "https://docs.fabricmc.net/develop/loader/",
+      "category": "developer-knowledge",
+      "source_type": "official-documentation",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "loader",
+        "entrypoints",
+        "dependencies",
+        "metadata"
+      ],
+      "use_for": [
+        "Fabric Loader documentation"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/loader/",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "fabric-porting-current",
+      "name": "Fabric migration and version guidance",
+      "url": "https://docs.fabricmc.net/develop/porting/",
+      "canonical_url": "https://docs.fabricmc.net/develop/porting/",
+      "category": "developer-knowledge",
+      "source_type": "migration-notes",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "migration",
+        "porting",
+        "version",
+        "update",
+        "api"
+      ],
+      "use_for": [
+        "Fabric migration and version guidance"
+      ],
+      "environment": {
+        "minecraft": "26.2",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/porting/",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "fabric-mappings-migration",
+      "name": "Fabric migrating mappings",
+      "url": "https://docs.fabricmc.net/develop/porting/mappings/",
+      "canonical_url": "https://docs.fabricmc.net/develop/porting/mappings/",
+      "category": "developer-knowledge",
+      "source_type": "migration-notes",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "mappings",
+        "yarn",
+        "mojang",
+        "migration",
+        "namespace"
+      ],
+      "use_for": [
+        "Fabric migrating mappings"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/porting/mappings/",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "mixin-wiki",
+      "name": "SpongePowered Mixin developer wiki",
+      "url": "https://github.com/SpongePowered/Mixin/wiki",
+      "canonical_url": "https://github.com/SpongePowered/Mixin/wiki",
+      "category": "developer-knowledge",
+      "source_type": "maintainer-documentation",
+      "trust": "maintainer-documentation",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "injection",
+        "callback",
+        "bytecode"
+      ],
+      "use_for": [
+        "SpongePowered Mixin developer wiki"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/SpongePowered/Mixin/wiki",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "mixin-callback-injectors",
+      "name": "Mixin callback injectors HEAD cancellable",
+      "url": "https://github.com/SpongePowered/Mixin/wiki/Advanced-Mixin-Usage---Callback-Injectors",
+      "canonical_url": "https://github.com/SpongePowered/Mixin/wiki/Advanced-Mixin-Usage---Callback-Injectors",
+      "category": "developer-knowledge",
+      "source_type": "maintainer-documentation",
+      "trust": "maintainer-documentation",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "inject",
+        "head",
+        "callback",
+        "cancellable",
+        "return",
+        "injection"
+      ],
+      "use_for": [
+        "Mixin callback injectors HEAD cancellable"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/SpongePowered/Mixin/wiki/Advanced-Mixin-Usage---Callback-Injectors",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "mixin-injection-points",
+      "name": "Mixin injection point reference",
+      "url": "https://github.com/SpongePowered/Mixin/wiki/Injection-Point-Reference",
+      "canonical_url": "https://github.com/SpongePowered/Mixin/wiki/Injection-Point-Reference",
+      "category": "developer-knowledge",
+      "source_type": "maintainer-documentation",
+      "trust": "maintainer-documentation",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "inject",
+        "head",
+        "return",
+        "invoke",
+        "injection",
+        "point"
+      ],
+      "use_for": [
+        "Mixin injection point reference"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/SpongePowered/Mixin/wiki/Injection-Point-Reference",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "mixin-maintainer-internals",
+      "name": "Mixin maintainer explanation of injection internals",
+      "url": "https://github.com/SpongePowered/Mixin/wiki/Flippin%27-Mixins%2C-how-do-they-work%3F",
+      "canonical_url": "https://github.com/SpongePowered/Mixin/wiki/Flippin%27-Mixins%2C-how-do-they-work%3F",
+      "category": "developer-knowledge",
+      "source_type": "maintainer-documentation",
+      "trust": "maintainer-documentation",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "injector",
+        "bytecode",
+        "ordering",
+        "internals"
+      ],
+      "use_for": [
+        "Mixin maintainer explanation of injection internals"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/SpongePowered/Mixin/wiki/Flippin%27-Mixins%2C-how-do-they-work%3F",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "mixin-inject-javadoc",
+      "name": "Mixin Inject annotation source Javadoc",
+      "url": "https://raw.githubusercontent.com/SpongePowered/Mixin/master/src/main/java/org/spongepowered/asm/mixin/injection/Inject.java",
+      "canonical_url": "https://raw.githubusercontent.com/SpongePowered/Mixin/master/src/main/java/org/spongepowered/asm/mixin/injection/Inject.java",
+      "category": "developer-knowledge",
+      "source_type": "source-comment",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "inject",
+        "head",
+        "callback",
+        "cancellable",
+        "javadoc"
+      ],
+      "use_for": [
+        "Mixin Inject annotation source Javadoc"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://raw.githubusercontent.com/SpongePowered/Mixin/master/src/main/java/org/spongepowered/asm/mixin/injection/Inject.java",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash."
+    },
+    {
+      "id": "fabric-api-source",
+      "name": "Fabric API source and inline Javadocs",
+      "url": "https://github.com/FabricMC/fabric-api",
+      "canonical_url": "https://github.com/FabricMC/fabric-api",
+      "category": "developer-knowledge",
+      "source_type": "official-source",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "api",
+        "networking",
+        "event"
+      ],
+      "use_for": [
+        "Fabric API source and inline Javadocs"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/FabricMC/fabric-api",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash.",
+      "transport": "repository",
+      "repository_source_id": "fabric-api"
+    },
+    {
+      "id": "fabric-loader-source",
+      "name": "Fabric Loader source and inline Javadocs",
+      "url": "https://github.com/FabricMC/fabric-loader",
+      "canonical_url": "https://github.com/FabricMC/fabric-loader",
+      "category": "developer-knowledge",
+      "source_type": "official-source",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "loader",
+        "launch",
+        "entrypoints"
+      ],
+      "use_for": [
+        "Fabric Loader source and inline Javadocs"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/FabricMC/fabric-loader",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash.",
+      "transport": "repository",
+      "repository_source_id": "fabric-loader"
+    },
+    {
+      "id": "fabric-loom-source",
+      "name": "Fabric Loom source",
+      "url": "https://github.com/FabricMC/fabric-loom",
+      "canonical_url": "https://github.com/FabricMC/fabric-loom",
+      "category": "developer-knowledge",
+      "source_type": "official-source",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "loom",
+        "gradle",
+        "mappings"
+      ],
+      "use_for": [
+        "Fabric Loom source"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/FabricMC/fabric-loom",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash.",
+      "transport": "repository",
+      "repository_source_id": "fabric-loom"
+    },
+    {
+      "id": "fabric-example-source",
+      "name": "Official Fabric example mod",
+      "url": "https://github.com/FabricMC/fabric-example-mod",
+      "canonical_url": "https://github.com/FabricMC/fabric-example-mod",
+      "category": "developer-knowledge",
+      "source_type": "official-source",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "fabric",
+        "example",
+        "mod",
+        "setup"
+      ],
+      "use_for": [
+        "Official Fabric example mod"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/FabricMC/fabric-example-mod",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash.",
+      "transport": "repository",
+      "repository_source_id": "fabric-example-mod"
+    },
+    {
+      "id": "yarn-mapping-source",
+      "name": "Fabric Yarn mapping source",
+      "url": "https://github.com/FabricMC/yarn",
+      "canonical_url": "https://github.com/FabricMC/yarn",
+      "category": "developer-knowledge",
+      "source_type": "official-source",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "yarn",
+        "mappings",
+        "namespace"
+      ],
+      "use_for": [
+        "Fabric Yarn mapping source"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/FabricMC/yarn",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash.",
+      "transport": "repository"
+    },
+    {
+      "id": "mixin-official-source",
+      "name": "SpongePowered Mixin source Javadocs",
+      "url": "https://github.com/SpongePowered/Mixin",
+      "canonical_url": "https://github.com/SpongePowered/Mixin",
+      "category": "developer-knowledge",
+      "source_type": "official-source",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "callback",
+        "injector",
+        "javadoc"
+      ],
+      "use_for": [
+        "SpongePowered Mixin source Javadocs"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://github.com/SpongePowered/Mixin",
+        "revision": null
+      },
+      "notes": "Official provenance does not establish compatibility with the active project. Current URLs can change; cached content is pinned by hash.",
+      "transport": "repository",
+      "repository_source_id": "mixin"
+    },
+    {
+      "id": "fabric-payload-registry-121",
+      "name": "Fabric 1.21 PayloadTypeRegistry Javadocs",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/PayloadTypeRegistry.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/PayloadTypeRegistry.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "networking",
+        "payload",
+        "codec",
+        "registry",
+        "playS2C",
+        "register"
+      ],
+      "use_for": [
+        "networking payload codec registry playS2C register"
+      ],
+      "environment": {
+        "minecraft": "1.21",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/PayloadTypeRegistry.html",
+        "revision": null
+      },
+      "notes": "Exact Fabric API version. Javadocs use Yarn Minecraft class names; compare the active namespace before using signatures. Included because package-level documentation alone did not resolve registration/threading uncertainty."
+    },
+    {
+      "id": "fabric-client-networking-121",
+      "name": "Fabric 1.21 ClientPlayNetworking Javadocs",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "networking",
+        "client",
+        "receiver",
+        "registerGlobalReceiver",
+        "payload",
+        "thread"
+      ],
+      "use_for": [
+        "networking client receiver registerGlobalReceiver payload thread"
+      ],
+      "environment": {
+        "minecraft": "1.21",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/client/networking/v1/ClientPlayNetworking.html",
+        "revision": null
+      },
+      "notes": "Exact Fabric API version. Javadocs use Yarn Minecraft class names; compare the active namespace before using signatures. Included because package-level documentation alone did not resolve registration/threading uncertainty."
+    },
+    {
+      "id": "fabric-server-networking-121",
+      "name": "Fabric 1.21 ServerPlayNetworking Javadocs",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/ServerPlayNetworking.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/ServerPlayNetworking.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "networking",
+        "server",
+        "send",
+        "canSend",
+        "payload"
+      ],
+      "use_for": [
+        "networking server send canSend payload"
+      ],
+      "environment": {
+        "minecraft": "1.21",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.0+1.21/net/fabricmc/fabric/api/networking/v1/ServerPlayNetworking.html",
+        "revision": null
+      },
+      "notes": "Exact Fabric API version. Javadocs use Yarn Minecraft class names; compare the active namespace before using signatures. Included because package-level documentation alone did not resolve registration/threading uncertainty."
+    },
+    {
+      "id": "fabric-world-rendering",
+      "name": "Fabric world rendering",
+      "url": "https://docs.fabricmc.net/develop/rendering/world",
+      "canonical_url": "https://docs.fabricmc.net/develop/rendering/world",
+      "category": "developer-knowledge",
+      "source_type": "official-documentation",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "world",
+        "rendering",
+        "extraction",
+        "drawing",
+        "pipeline"
+      ],
+      "use_for": [
+        "Fabric world rendering",
+        "Separate extraction of render state from drawing; match the documented pipeline to the active game version."
+      ],
+      "environment": {
+        "minecraft": "26.2",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": "CC-BY-NC-SA-4.0",
+        "evidence_url": "https://github.com/FabricMC/fabric-docs/blob/main/LICENSE",
+        "review": "Reference-only; attribution and upstream terms apply; no copying/derivation/redistribution approved."
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/rendering/world",
+        "revision": null
+      },
+      "notes": "Compact original summary of cited evidence; unknown version is not universal compatibility. Recheck against local project.",
+      "technical_summary": {
+        "topic": "Fabric world rendering",
+        "takeaway": "Separate extraction of render state from drawing; match the documented pipeline to the active game version.",
+        "author": "Fabric documentation contributors",
+        "author_status": "official",
+        "date": "2026-10-06",
+        "provenance_url": "https://docs.fabricmc.net/develop/rendering/world"
+      }
+    },
+    {
+      "id": "fabric-hud-rendering",
+      "name": "Fabric HUD rendering",
+      "url": "https://docs.fabricmc.net/develop/rendering/hud",
+      "canonical_url": "https://docs.fabricmc.net/develop/rendering/hud",
+      "category": "developer-knowledge",
+      "source_type": "official-documentation",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "hud",
+        "rendering",
+        "layers",
+        "GUI"
+      ],
+      "use_for": [
+        "Fabric HUD rendering",
+        "Use the version-specific HUD layer API and render timing; do not assume old HUD callbacks remain equivalent."
+      ],
+      "environment": {
+        "minecraft": "26.2",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": "CC-BY-NC-SA-4.0",
+        "evidence_url": "https://github.com/FabricMC/fabric-docs/blob/main/LICENSE",
+        "review": "Reference-only; attribution and upstream terms apply; no copying/derivation/redistribution approved."
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://docs.fabricmc.net/develop/rendering/hud",
+        "revision": null
+      },
+      "notes": "Compact original summary of cited evidence; unknown version is not universal compatibility. Recheck against local project.",
+      "technical_summary": {
+        "topic": "Fabric HUD rendering",
+        "takeaway": "Use the version-specific HUD layer API and render timing; do not assume old HUD callbacks remain equivalent.",
+        "author": "Fabric documentation contributors",
+        "author_status": "official",
+        "date": "2026-10-06",
+        "provenance_url": "https://docs.fabricmc.net/develop/rendering/hud"
+      }
+    },
+    {
+      "id": "fabric-release-263",
+      "name": "Fabric for Minecraft 26.3",
+      "url": "https://fabricmc.net/2026/09/15/263.html",
+      "canonical_url": "https://fabricmc.net/2026/09/15/263.html",
+      "category": "developer-knowledge",
+      "source_type": "release-notes",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "migration",
+        "release",
+        "version",
+        "26.3",
+        "input",
+        "SDL"
+      ],
+      "use_for": [
+        "Fabric for Minecraft 26.3",
+        "26.3 changes input to SDL and replaces several registries with vanilla data components; this article is not 1.21 guidance."
+      ],
+      "environment": {
+        "minecraft": "26.3",
+        "loader": "fabric",
+        "mappings": null
+      },
+      "license": {
+        "reported": "CC-BY-NC-SA-4.0",
+        "evidence_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "review": "Reference-only; attribution and upstream terms apply; no copying/derivation/redistribution approved."
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-06",
+        "evidence_url": "https://fabricmc.net/2026/09/15/263.html",
+        "revision": null
+      },
+      "notes": "Compact original summary of cited evidence; unknown version is not universal compatibility. Recheck against local project.",
+      "technical_summary": {
+        "topic": "Fabric for Minecraft 26.3",
+        "takeaway": "26.3 changes input to SDL and replaces several registries with vanilla data components; this article is not 1.21 guidance.",
+        "author": "Fabric project",
+        "author_status": "official",
+        "date": "2026-09-15",
+        "provenance_url": "https://fabricmc.net/2026/09/15/263.html"
+      }
+    },
+    {
+      "id": "yarn-screen-1211",
+      "name": "Minecraft 1.21.1 Screen rendering and background",
+      "url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/client/gui/screen/Screen.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/client/gui/screen/Screen.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "screen",
+        "gui",
+        "background",
+        "blur",
+        "render",
+        "widgets",
+        "DrawContext",
+        "renderBackground",
+        "applyBlur"
+      ],
+      "use_for": [
+        "custom screen background blur render order widgets input lifecycle"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/client/gui/screen/Screen.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "fabric-world-rendering-1211",
+      "name": "Fabric 1.21.1 WorldRenderEvents",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/rendering/v1/WorldRenderEvents.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/rendering/v1/WorldRenderEvents.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "world",
+        "rendering",
+        "render",
+        "event",
+        "esp",
+        "block",
+        "outline",
+        "depth",
+        "camera"
+      ],
+      "use_for": [
+        "world render phases block outlines depth camera context callbacks"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/rendering/v1/WorldRenderEvents.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "fabric-hud-rendering-1211",
+      "name": "Fabric 1.21.1 HudRenderCallback",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/rendering/v1/HudRenderCallback.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/rendering/v1/HudRenderCallback.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "hud",
+        "overlay",
+        "rendering",
+        "render",
+        "callback",
+        "DrawContext"
+      ],
+      "use_for": [
+        "HUD overlay callback draw context render tick counter"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/rendering/v1/HudRenderCallback.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "fabric-screen-events-1211",
+      "name": "Fabric 1.21.1 ScreenEvents",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "screen",
+        "gui",
+        "event",
+        "render",
+        "init",
+        "resize"
+      ],
+      "use_for": [
+        "screen initialization before after render events lifecycle"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/screen/v1/ScreenEvents.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "yarn-screen-handler-1211",
+      "name": "Minecraft 1.21.1 ScreenHandler inventory slots",
+      "url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/screen/ScreenHandler.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/screen/ScreenHandler.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "inventory",
+        "slot",
+        "screen",
+        "handler",
+        "container",
+        "click",
+        "syncId",
+        "revision"
+      ],
+      "use_for": [
+        "screen handler slot indices click synchronization revision"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/screen/ScreenHandler.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "yarn-player-inventory-1211",
+      "name": "Minecraft 1.21.1 PlayerInventory hotbar",
+      "url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/entity/player/PlayerInventory.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/entity/player/PlayerInventory.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "inventory",
+        "hotbar",
+        "slot",
+        "selectedSlot",
+        "swap"
+      ],
+      "use_for": [
+        "player inventory main armor offhand selected hotbar slot indices"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/entity/player/PlayerInventory.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "fabric-keybinding-1211",
+      "name": "Fabric 1.21.1 KeyBindingHelper",
+      "url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/keybinding/v1/KeyBindingHelper.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/keybinding/v1/KeyBindingHelper.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "keybinding",
+        "key",
+        "binding",
+        "input",
+        "registration"
+      ],
+      "use_for": [
+        "register client key binding"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/fabric-api-0.102.1+1.21.1/net/fabricmc/fabric/api/client/keybinding/v1/KeyBindingHelper.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "yarn-keybinding-1211",
+      "name": "Minecraft 1.21.1 KeyBinding input state",
+      "url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/client/option/KeyBinding.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/client/option/KeyBinding.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "keybinding",
+        "key",
+        "binding",
+        "input",
+        "wasPressed",
+        "isPressed",
+        "toggle"
+      ],
+      "use_for": [
+        "key press consumption held state toggle wasPressed isPressed"
+      ],
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "fabric",
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://maven.fabricmc.net/docs/yarn-1.21.1+build.3/net/minecraft/client/option/KeyBinding.html",
+        "revision": null
+      },
+      "notes": "Versioned API page; mapping names must be translated for Mojang-mapped projects. Fetched content is pinned by hash."
+    },
+    {
+      "id": "mixinextras-wrap-operation",
+      "name": "MixinExtras WrapOperation guide",
+      "url": "https://github.com/LlamaLad7/MixinExtras/wiki/WrapOperation",
+      "canonical_url": "https://github.com/LlamaLad7/MixinExtras/wiki/WrapOperation",
+      "category": "developer-knowledge",
+      "source_type": "maintainer-guide",
+      "trust": "maintainer-documentation",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "mixin",
+        "injector",
+        "WrapOperation",
+        "Operation",
+        "redirect"
+      ],
+      "use_for": [
+        "composable wrapping operation handler signatures chaining original call"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": null,
+        "mappings": null
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://github.com/LlamaLad7/MixinExtras/wiki/WrapOperation",
+        "revision": null
+      },
+      "notes": "Maintainer documentation; Minecraft applicability is unknown. Verify against the installed library version."
+    },
+    {
+      "id": "owo-ui-guide",
+      "name": "owo-ui component layout guide",
+      "url": "https://docs.wispforest.io/owo/ui/getting-started",
+      "canonical_url": "https://docs.wispforest.io/owo/ui/getting-started",
+      "category": "developer-knowledge",
+      "source_type": "maintainer-guide",
+      "trust": "maintainer-documentation",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "gui",
+        "screen",
+        "layout",
+        "component",
+        "widgets",
+        "surface",
+        "owo"
+      ],
+      "use_for": [
+        "custom screen component layout sizing padding alignment surface"
+      ],
+      "environment": {
+        "minecraft": null,
+        "loader": null,
+        "mappings": "yarn"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-10",
+        "evidence_url": "https://docs.wispforest.io/owo/ui/getting-started",
+        "revision": null
+      },
+      "notes": "Maintainer documentation; Minecraft applicability is unknown. Verify against the installed library version."
+    },
+    {
+      "id": "yarn-screen-12111",
+      "name": "Minecraft 1.21.11 Screen blur and input API",
+      "url": "https://maven.fabricmc.net/docs/yarn-1.21.11+build.3/net/minecraft/client/gui/screen/Screen.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/yarn-1.21.11+build.3/net/minecraft/client/gui/screen/Screen.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "screen",
+        "blur",
+        "renderBackground",
+        "input",
+        "KeyEvent"
+      ],
+      "use_for": [
+        "Minecraft 1.21.11 Screen blur and input API"
+      ],
+      "environment": {
+        "minecraft": "1.21.11",
+        "loader": "fabric",
+        "mappings": "yarn",
+        "mappings_version": "1.21.11+build.3",
+        "namespace": "named"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-11",
+        "evidence_url": "https://maven.fabricmc.net/docs/yarn-1.21.11+build.3/net/minecraft/client/gui/screen/Screen.html",
+        "revision": "yarn-1.21.11+build.3"
+      },
+      "notes": "Exact Yarn API identity, not behavioral proof. Local Mojang-mapped 1.21.11 source establishes call order; translate namespaces explicitly."
+    },
+    {
+      "id": "yarn-interaction-12111",
+      "name": "Minecraft 1.21.11 interaction selection and prediction API",
+      "url": "https://maven.fabricmc.net/docs/yarn-1.21.11+build.3/net/minecraft/client/network/ClientPlayerInteractionManager.html",
+      "canonical_url": "https://maven.fabricmc.net/docs/yarn-1.21.11+build.3/net/minecraft/client/network/ClientPlayerInteractionManager.html",
+      "category": "developer-knowledge",
+      "source_type": "javadoc",
+      "trust": "primary",
+      "priority": "core",
+      "language": "Java",
+      "tags": [
+        "inventory",
+        "interaction",
+        "syncSelectedSlot",
+        "sendSequencedPacket",
+        "interactItem",
+        "prediction"
+      ],
+      "use_for": [
+        "Minecraft 1.21.11 interaction selection and prediction API"
+      ],
+      "environment": {
+        "minecraft": "1.21.11",
+        "loader": "fabric",
+        "mappings": "yarn",
+        "mappings_version": "1.21.11+build.3",
+        "namespace": "named"
+      },
+      "license": {
+        "reported": null,
+        "review": "Page-specific rights review required; retrieval is reference-only"
+      },
+      "code_reuse": {
+        "allowed": false,
+        "generated_derivation_allowed": false,
+        "redistribution_allowed": false
+      },
+      "review": {
+        "checked_at": "2026-10-11",
+        "evidence_url": "https://maven.fabricmc.net/docs/yarn-1.21.11+build.3/net/minecraft/client/network/ClientPlayerInteractionManager.html",
+        "revision": "yarn-1.21.11+build.3"
+      },
+      "notes": "Exact Yarn API identity, not behavioral proof. Local Mojang-mapped 1.21.11 source establishes call order; translate namespaces explicitly."
+    }
+  ]
+}

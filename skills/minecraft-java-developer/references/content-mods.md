@@ -1,0 +1,13 @@
+# Ordinary content and gameplay mods
+
+Use for items, blocks, recipes, entities, world generation, menus and saved game state. Follow the active loader's lifecycle and exact-version conventions. Do not add client modules, keybinds or combat controllers unless requested.
+
+- **Registration:** trace the identifier, registry entry and initializer that actually registers it. A class or static field alone does not prove registration executes. Match the target version's registry key/settings requirements. Existing IDs are saved-world identity; renaming one can break old data.
+- **Resources and data:** connect namespaced IDs to the required models, textures, translations, loot, recipes and tags. Distinguish client assets from server data. Inspect the target version's formats and directory names rather than transplanting latest examples into older versions. Datagen output must be part of the build resources; successful generation outside the packaged source sets is insufficient.
+- **State:** decide whether data belongs to an item stack, block state, block entity, entity or world. Avoid shared mutable fields on singleton registered items/blocks for per-instance state. Use the applicable serialization hooks and dirty marking; persistence and client synchronization are different requirements.
+- **Menus and interaction:** the server owns inventories and gameplay results; a screen displays synchronized state and sends validated intent. Match slot ranges and transfer rules to the actual menu, and handle closure/removal without duplication or loss. Load [networking](networking.md) only when synchronization or payload behavior is uncertain, and [rendering](rendering.md) only for the screen itself.
+- **Side:** common initialization must work on a dedicated server without resolving rendering/input classes. A server-only mod intended for vanilla clients cannot silently require new client registries, packets or assets. Identify that compatibility requirement before implementation.
+
+Check the requested acquisition/use path and relevant lifecycle, such as crafting, placement, breaking/drops, save/reload or two-player synchronization. Choose checks for the changed behavior; not every item edit needs all of these. No source-level review proves live gameplay success.
+
+Source anchors: [Fabric item registration and resources](https://docs.fabricmc.net/develop/items/first-item) and [block entities and persistence](https://docs.fabricmc.net/develop/blocks/block-entities), reviewed 2026-10-12. These pages currently describe 26.2; select the project version and mapping namespace before using their APIs.

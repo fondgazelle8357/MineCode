@@ -1,0 +1,23 @@
+exclude *
+recursive-exclude * *
+
+include MANIFEST.in pyproject.toml setup.py release_resources.py
+recursive-include src/minecode_runtime *.py
+include README.md CONTRIBUTING.md SECURITY.md THIRD_PARTY_NOTICES.md
+include docs/ADVANCED_SETUP.md docs/CAPABILITIES.md docs/EVIDENCE_POLICY.md docs/INSTALLATION.md
+include docs/LICENSING.md docs/PROVIDERS.md docs/QUICKSTART.md docs/RETRIEVAL.md
+include docs/WORKFLOW.md
+include integrations/providers.json mcp/README.md
+include references/gameplay/techniques.json
+include references/sources/developer-knowledge.json references/sources/sources.yaml
+recursive-include skills/minecraft-debugger *.md
+recursive-include skills/minecraft-java-developer *.md
+recursive-include skills/minecraft-project-inspector *.md
+
+recursive-include skills/minecraft-client-developer *.md
+recursive-include skills/minecraft-server-developer *.md
+recursive-include skills/minecraft-understand-anticheat *.md
+
+include LICENSE docs/ARCHITECTURE.md
+include docs/assets/architecture.svg
+include docs/assets/minecode-demo.gif docs/assets/minecode-demo.png docs/assets/README.md

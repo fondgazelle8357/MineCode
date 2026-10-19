@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "classification": "integration-not-code-reuse",
+  "providers": [
+    {
+      "id": "minecraft-dev-mcp",
+      "url": "https://github.com/MCDxAI/minecraft-dev-mcp",
+      "revision": "1120c5b4ad78f56a879553722b23da219208eeeb",
+      "package_version": "1.3.0",
+      "observed_protocol_version": "1.0.0",
+      "license": "MIT",
+      "license_url": "https://github.com/MCDxAI/minecraft-dev-mcp/blob/1120c5b4ad78f56a879553722b23da219208eeeb/LICENSE",
+      "copyright": "Copyright (c) 2025 Minecraft Dev MCP Contributors",
+      "maintenance": "not archived; last observed push 2026-08-07",
+      "installation": "Separately installed Node >=18 package or reviewed source build; Java >=17 for applicable analysis operations; native dependencies may require platform setup.",
+      "security": "Trusted executable with local filesystem/network/cache access. MineCode uses stdio and a selected capability allowlist; not an OS sandbox.",
+      "compatibility": "Upstream documents 1.14+ source workflows; individual tool/version/mapping combinations require verification. Legacy 1.8.9/1.12.2 support is not established.",
+      "code_copied": false
+    },
+    {
+      "id": "mcpfabric",
+      "requested_url": "https://github.com/Etoryx/mcpfabric",
+      "url": "https://github.com/denfry/mcpfabric",
+      "revision": "f0acc37be526a7c38e52cf1337f3e60e570b4e9d",
+      "package_version": "0.5.1",
+      "observed_protocol_version": "0.5.1",
+      "license": "MIT",
+      "license_url": "https://github.com/denfry/mcpfabric/blob/f0acc37be526a7c38e52cf1337f3e60e570b4e9d/LICENSE",
+      "copyright": "Copyright (c) 2026 dabinayo",
+      "maintenance": "Etoryx copy declares relocation; maintained repository last observed push 2026-10-05",
+      "installation": "Separate Node >=22.16 MCP bridge plus matching Fabric/NeoForge game mod; Node bridge alone cannot observe Minecraft.",
+      "security": "Loopback bearer-authenticated game bridge. Upstream supports operator-level actions; MineCode defaults expose only game_status/player_state and force MCPFABRIC_AGENT=false.",
+      "compatibility": "Use a matching upstream version-specific game mod and a connected bridge; check current upstream compatibility before installation.",
+      "code_copied": false
+    }
+  ]
+}
