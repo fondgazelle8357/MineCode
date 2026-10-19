@@ -63,7 +63,17 @@ In a fresh host session, ask the agent to call `minecode.get_project_profile` an
 
 Setup leaves build execution, reference downloads and providers off. Local inspection, cached source lookup and supplied-log diagnostics work without these opt-ins. Enable only the [permissions](ADVANCED_SETUP.md#permissions-and-paths) you need. Builds use trusted project scripts; these flags aren't an OS sandbox.
 
-Generated configuration contains machine-specific paths. Keep it and installation records out of shared commits. Review output before sharing: your coding host may send paths and source excerpts to its model service.
+Generated host configuration contains absolute paths to the Python runtime and selected project. Treat it and `.minecode/` installation records as machine-local state: review both for local path details before sharing. Current `installation-<host>.json` manifests store relative managed filenames and hashes; they do not store those absolute runtime/project paths. Your coding host may send paths and source excerpts to its model service.
+
+Add the applicable rules yourself to the Minecraft project's `.gitignore`, or to `.git/info/exclude` for local-only exclusions:
+
+```gitignore
+/.codex/config.toml
+/.mcp.json
+/.minecode/
+```
+
+Setup does not edit ignore rules. Ignore rules do not untrack files already in Git; review and sanitize any intentionally shared host configuration.
 
 ## Updates and uninstall
 
@@ -87,4 +97,4 @@ Repeat with `--host claude` where installed. Unchanged managed files are removed
 
 ## Maintainer package build
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md#check-your-work) for development checks and package builds. Explicit resource lists reject stale output. Tests and CI belong in the community repository; the wheel contains runtime code and user resources.
+See [CONTRIBUTING.md](../CONTRIBUTING.md#check-your-work) for development checks and package builds. Explicit resource lists reject stale output. Tests and CI belong in this repository; the wheel contains runtime code and user resources.
