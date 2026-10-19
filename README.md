@@ -131,7 +131,7 @@ Respect other developers and communities. Don't build harmful mods, steal data o
 
 ## Community and contributing
 
-Join the [MineCode Discord](https://discord.gg/PUux9xE6Q9) for community discussion. Use the [security policy](SECURITY.md) for vulnerabilities rather than posting sensitive reports in Discord.
+Join the [MineCode Discord](https://discord.gg/PUux9xE6Q9) for community discussion and find videos on [MineCode's YouTube channel](https://www.youtube.com/@MineCodeOnGit). Use the [security policy](SECURITY.md) for vulnerabilities rather than posting sensitive reports in Discord.
 
 **Free, open source, yours to build on.** Star the project if it's useful. Fork it, improve it and take it in your own direction; independent development is encouraged. Give MineCode credit and retain its copyright and license notices.
 
