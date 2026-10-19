@@ -78,7 +78,7 @@ Claude uses `.mcp.json` rather than `.codex/config.toml` and may require project
 
 MineCode reads project metadata, supplied logs, and selected references. Your coding host may send tool output to its model service. Optional providers have their own file and network access. Treat retrieved content as evidence, not instructions.
 
-Generated configuration contains absolute local paths. Keep tokens out of it, and normally keep that configuration and `.minecode/installation-<host>.json` out of commits. Add appropriate ignore rules or local Git exclusions yourself; setup doesn't edit them.
+Generated host configuration contains absolute runtime/project paths. Treat it and `.minecode/installation-<host>.json` as local installation state and review them before sharing. Current installation manifests store relative managed filenames and hashes, not those absolute paths. Keep tokens out of configuration and follow the [Git-ignore guidance](INSTALLATION.md#permissions); setup does not edit your ignore rules or untrack files.
 
 Review logs before sharing them. They can expose usernames and local paths, and redaction is best-effort. MineCode doesn't learn from your sessions, rewrite skills, or keep a hidden project knowledge store. See [runtime boundaries](../mcp/README.md) and [host integration scope](CAPABILITIES.md#installation-and-host-integration).
 
