@@ -70,6 +70,16 @@ See [evidence policy](../docs/EVIDENCE_POLICY.md) before applying external examp
 
 ## Current scope
 
+An optional `minecode-semantic` provider exposes `navigate_symbol` through the existing
+`minecode.call_provider` tool with capability `semantic_navigation`. It accepts a
+project-relative saved Java/Kotlin file, zero-based UTF-16 line/column, one to five
+operations (`definition`, `references`, `implementation`, `incoming_calls`,
+`outgoing_calls`), `max_results` (1–50, default 10), and `timeout_seconds` (1–100,
+default 40). This does not change the fourteen core tools. The provider returns a
+source hash, backend identity and per-operation results/status/truncation; completeness
+remains unknown. Backend launch is explicitly configured and trusted, not bundled.
+See [setup, lifecycle and evidence limits](../docs/PROVIDERS.md#optional-semantic-navigation).
+
 Use the fourteen operations through the [shared workflow](../docs/WORKFLOW.md). The coding agent implements changes and decides which small fixes to attempt. Compilation, build, startup, installed-package and behavior evidence remain distinct.
 
 The gameplay lookup is offline and static. Optional providers remain separately installed and explicitly enabled. Gradle execution is limited to the documented task allowlist. Execution, retrieval and provider opt-ins remain separate; there is no automatic learning or skill rewriting.

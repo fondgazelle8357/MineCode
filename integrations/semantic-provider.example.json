@@ -1,0 +1,18 @@
+{
+  "providers": [
+    {
+      "id": "semantic-code",
+      "command": "C:\\path\\to\\MineCode\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m", "minecode_runtime.semantic_provider",
+        "--project", "C:\\Projects\\MyMod",
+        "--allow-backend-execution",
+        "--", "C:\\path\\to\\language-server.exe", "--stdio"
+      ],
+      "env_names": ["PATH", "JAVA_HOME", "USERPROFILE", "LOCALAPPDATA", "SystemRoot"],
+      "capabilities": {
+        "semantic_navigation": "navigate_symbol"
+      }
+    }
+  ]
+}

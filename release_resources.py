@@ -29,6 +29,7 @@ BUNDLE_FILES = (
     Path("docs/RETRIEVAL.md"),
     Path("docs/WORKFLOW.md"),
     Path("integrations/providers.json"),
+    Path("integrations/semantic-provider.example.json"),
     Path("mcp/README.md"),
     Path("references/gameplay/techniques.json"),
 )

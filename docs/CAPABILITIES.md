@@ -30,6 +30,14 @@ Version labels describe evidence actually available. Fabric API module versions 
 
 Providers are optional and separately installed. A reachable MCP process doesn't prove every specialized operation or an in-game bridge works. Use local artifacts and normal investigation if a provider fails. See [provider setup](PROVIDERS.md).
 
+The experimental semantic navigation adapter can request definitions, references,
+implementations and call hierarchy from an explicitly configured stdio language
+server. It reports unsupported operations and unknown index completeness separately
+from empty results. Its protocol/MCP tests use a simulator; real Java/Kotlin compiler
+resolution and Minecraft project imports remain unverified. Backends are not bundled,
+and cross-language support depends on the selected backend. See
+[semantic setup and limits](PROVIDERS.md#optional-semantic-navigation).
+
 ## Runtime and behavior evidence
 
 Offline tests cover tool schemas/calls, installation, bounded resource handling, diagnostic controls and pinned Minecraft mapping answers. Fabric source retrieval tests preserve version, mapping and source provenance.
